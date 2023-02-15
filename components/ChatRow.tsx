@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { BsChatRight } from "react-icons/bs";
 import { AiOutlineDelete } from "react-icons/ai";
@@ -36,9 +36,10 @@ const ChatRow = ({ id }: Props) => {
     return (
         <Link
             href={`/chat/${id}`}
-            className={`flex items-center sidebarRows bg-black border-transparent ${
-                active &&
-                "bg-gradient-to-r from-black to-emerald-800/50 border-emerald-500"
+            className={`flex items-center sidebarRows bg-black  ${
+                active
+                    ? "bg-gradient-to-r from-black to-emerald-800/50 border-emerald-500"
+                    : "border-transparent"
             }`}
         >
             <BsChatRight size={17} />
