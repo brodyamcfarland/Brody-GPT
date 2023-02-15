@@ -39,9 +39,9 @@ const SideBar = () => {
                 >
                     <img
                         onClick={() => signOut()}
-                        src={session.user?.image!}
+                        src={"/BrodyGPT.png" || session?.user?.image!}
                         alt="Google Photo"
-                        className="h-12 w-12 rounded-full"
+                        className="h-12 w-12 rounded-full shadow-lg border-[2px] border-emerald-500"
                     />
                     <div className="flex flex-col">
                         <span className="text-emerald-300 text-sm font-semibold">
