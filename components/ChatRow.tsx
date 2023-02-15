@@ -38,7 +38,7 @@ const ChatRow = ({ id }: Props) => {
             href={`/chat/${id}`}
             className={`flex items-center sidebarRows bg-black  ${
                 active
-                    ? "bg-gradient-to-r from-black to-emerald-800/50 border-emerald-500"
+                    ? "bg-gradient-to-r from-black to-emerald-700/20 border-emerald-500"
                     : "border-transparent"
             }`}
         >

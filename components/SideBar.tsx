@@ -39,7 +39,7 @@ const SideBar = () => {
                 >
                     <img
                         onClick={() => signOut()}
-                        src={"/BrodyGPT.png" || session?.user?.image!}
+                        src={session?.user?.image! || "/BrodyGPT.png"}
                         alt="Google Photo"
                         className="h-12 w-12 rounded-full shadow-lg border-[2px] border-emerald-500"
                     />

@@ -76,14 +76,14 @@ const ChatInput = ({ chatId }: Props) => {
                     onChange={(e) => setPrompt(e.target.value)}
                     value={prompt}
                     disabled={!session}
-                    className="bg-black rounded-lg h-16 p-3 flex-1 text-sm text-emerald-300 disabled:text-gray-300 focus:outline-none disabled:cursor-not-allowed resize-none"
+                    className="bg-black rounded-lg h-16 p-3 flex-1 text-sm text-emerald-300 disabled:text-gray-300 focus:outline-none  disabled:cursor-not-allowed resize-none"
                     placeholder="Type Something..."
                 />
                 <button
                     disabled={!prompt || !session}
                     className="relative flex items-center disabled:opacity-30 disabled:cursor-not-allowed justify-center"
                     type="submit"
-                    title="GO"
+                    title="Submit"
                 >
                     <div className="bg-emerald-300/50 h-8 w-8 flex items-center justify-center rounded-full animate-pulse absolute blur-sm z-10" />
                     <ImSpinner10

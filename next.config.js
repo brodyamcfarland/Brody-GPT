@@ -9,6 +9,8 @@ module.exports = {
             "lh3.googleusercontent.com",
             "avatars.githubusercontent.com",
             "https://lh3.googleusercontent.com",
+            "lh3.googleusercontent.com",
+            "googleusercontent.com",
         ],
     },
 };
